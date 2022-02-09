@@ -453,3 +453,232 @@ body {
   left: 31px;
   z-index: 1;
 }
+
+.shop {
+  background-color: #FBF9F9;
+  border-top: 1px solid #EAC1BF;
+  border-bottom: 1px solid #EAC1BF;
+}
+
+.shop__container {
+  margin: 0 84px;
+  padding: 98px 0 122px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 86px;
+}
+
+.shop__title {
+  font-family: 'Ogg', sans-serif;
+  font-weight: 400;
+  font-size: 47px;
+  line-height: 68px;   
+  text-align: center;
+  color: #000;
+}
+
+.shop__list {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.shop__list-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 26px;
+}
+
+.shop__list-item div {
+  width: 106px;
+  height: 104px;
+}
+
+.shop__list-item div:hover {
+  background-color: rgba(185, 86, 187, .35);
+  /* filter: blur(50px); */
+  border-radius: 70px;
+  opacity: 1;
+  box-shadow: 0px 0px 40px 30px rgba(185, 86, 187, .35);
+}
+
+.shop__list-text {
+  font-family: 'Basis Grotesque', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.gifts__container {
+  margin: 0 44px;
+  padding: 130px 0 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 102px;
+}
+
+.gifts__title {
+  font-family: 'Ogg', sans-serif;
+  font-weight: 400;
+  font-size: 116px;
+  line-height: 120px;
+  text-align: center;
+  color: #000;
+}
+
+.gifts__cards {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.gifts__card {
+  display: flex;
+  flex-direction: column;
+}
+
+.gifts__card-image {
+  width: 436px;
+  height: 305px;
+  overflow: hidden;
+}
+
+.gifts__card-image-scale {
+  width: 100%;
+  height: 100%;
+  background: url(../images/box-kits-image.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: .3s ease-in-out;
+}
+
+.gifts__card-image-scale_type_second {
+  background: url(../images/pouch-kits-image.jpg);
+}
+
+.gifts__card-image-scale_type_third {
+  background: url(../images/duo-kits-image.jpg);
+}
+
+.gifts__card-image-scale:hover {
+  transform: scale(1.06);
+}
+
+.gifts__card-heading {
+  font-family: 'Ogg', sans-serif;
+  font-weight: 400;
+  font-size: 46px;
+  line-height: 48px;
+  color: #000;
+  margin: 14px 0 10px; 
+}
+
+.gifts__card-price {
+  font-family: 'Basis Grotesque', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #000;
+}
+
+.join {
+  border-top: 1px solid #EAC1BF;
+  border-bottom: 1px solid #EAC1BF;
+  background: linear-gradient(270deg, #FFFFFF 45.52%, rgba(255, 255, 255, 0.58) 100%), #EAC1BF;
+}
+
+.join__container {
+  margin: 0 44px;
+  padding: 62px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.join__info {
+  display: flex;
+  flex-direction: column;
+  max-width: 264px;
+}
+
+.join__info-title {
+  font-family: 'Ogg', sans-serif;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 56px;
+  color: #000;
+}
+
+.join__info-text {
+  font-family: 'Basis Grotesque', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000;
+  margin: 24px 0;
+  max-width: 250px;
+}
+
+.join__info-button {
+  width: 168px;
+  height: 48px;
+  border-radius: 32px;
+  padding: 14px 32px;
+  background-color: #000;
+  color: #FFF;
+  font-family: 'Basis Grotesque', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.join__cards {
+  display: flex;
+  max-width: 1002px;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.join__card {
+  width: 383px;
+  height: 298px;
+  overflow: hidden;
+}
+
+.join__card_size_s {
+  width: 185px;
+}
+
+.join__card-scale {
+  width: 100%;
+  height: 100%;
+  background: url(../images/join-first-image.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: .3s ease-in-out;
+}
+
+.join__card-scale_type_second {
+  background: url(../images/join-second-image.jpg);
+}
+
+.join__card-scale_type_third {
+  background: url(../images/join-third-image.jpg);
+}
+
+.join__card-scale:hover {
+  transform: scale(1.06);
+}
