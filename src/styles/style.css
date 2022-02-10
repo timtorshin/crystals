@@ -26,6 +26,12 @@ body {
   transition: .3s ease-in-out;
 }
 
+.button:hover {
+  transition: .3s ease-in-out;
+  transform: scale(1.1);
+  box-shadow: 0px 0px 28px 1px #878C8F;
+}
+
 .header__container {
   display: flex;
   justify-content: space-between;
@@ -40,6 +46,8 @@ body {
   background-image: url(../images/burger-button.svg);
   background-color: #FFF;
   background-size: 30px 20px;
+  border: none;
+  cursor: pointer;
 }
 
 .header__text {
@@ -64,6 +72,8 @@ body {
   background-image: url(../images/search-button.svg);
   background-color: #FFF;
   background-size: 32px 32px;
+  border: none;
+  cursor: pointer;
 }
 
 .header__nav-pyramid {
@@ -72,6 +82,8 @@ body {
   background-image: url(../images/pyramid-button.svg);
   background-color: #FFF;
   background-size: 32px 32px;
+  border: none;
+  cursor: pointer;
 }
 
 .home {
@@ -500,7 +512,6 @@ body {
 
 .shop__list-item div:hover {
   background-color: rgba(185, 86, 187, .35);
-  /* filter: blur(50px); */
   border-radius: 70px;
   opacity: 1;
   box-shadow: 0px 0px 40px 30px rgba(185, 86, 187, .35);
@@ -804,4 +815,55 @@ body {
 
 .gallery__card-scale:hover {
   transform: scale(1.04);
+}
+
+.footer {
+  background-image: url(../images/footer-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  min-height: 491px;
+}
+
+.footer__container {
+  margin: 0 56px;
+  padding: 80px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__logo {
+  display: block;
+  max-width: 100%;
+}
+
+.footer__links {
+  list-style: none;
+  margin: 104px 0 46px;
+  display: grid;
+  grid-template-columns: repeat(5, 160px);
+  grid-row-gap: 28px;
+  max-width: 80%;
+}
+
+.footer__link {
+  font-family: 'Basis Grotesque', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.footer__copyright {
+  display: flex;
+  column-gap: 10px;
+}
+
+.footer__copyright-text {
+  font-family: 'Basis Grotesque', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 24px;
+  color: #000;
 }
