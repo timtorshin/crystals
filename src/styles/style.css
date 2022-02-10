@@ -682,3 +682,126 @@ body {
 .join__card-scale:hover {
   transform: scale(1.06);
 }
+
+.review {
+  min-height: 697px;
+}
+
+.review__container {
+  margin: 0 22px;
+  padding-top: 188px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.review__text {
+  font-family: 'Ogg', sans-serif;
+  font-weight: 400;
+  font-size: 46px;
+  line-height: 72px;
+  text-align: center;
+  color: #000;
+  max-width: 620px;
+  margin: 30px 0;
+}
+
+.review__author {
+  font-family: 'Basis Grotesque', sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #000;
+  margin-bottom: 12px;
+}
+
+.review__left-frame {
+  background-image: url(../images/left-frame-image.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 335px;
+  height: 665px;
+  position: absolute;
+  left: 0;
+  top: 32px;
+}
+
+.review__right-frame {
+  background-image: url(../images/right-frame-image.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 335px;
+  height: 665px;
+  position: absolute;
+  right: 0;
+  top: 32px;
+}
+
+.gallery__container {
+  margin: 0 56px;
+  padding-top: 70px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.gallery__tags {
+  font-family: 'Basis Grotesque', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.gallery__cards {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.gallery__card {
+  width: 210px;
+  height: 209px;
+  overflow: hidden;
+}
+
+.gallery__card-scale {
+  width: 100%;
+  height: 100%;
+  background: url(../images/gallery-first-image.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: .3s ease-in-out;
+}
+
+.gallery__card-scale_type_second {
+  background: url(../images/gallery-second-image.jpg);
+}
+
+.gallery__card-scale_type_third {
+  background: url(../images/gallery-third-image.jpg);
+}
+
+.gallery__card-scale_type_fourth {
+  background: url(../images/gallery-fourth-image.jpg);
+}
+
+.gallery__card-scale_type_fifth {
+  background: url(../images/gallery-fifth-image.jpg);
+}
+
+.gallery__card-scale_type_sixth {
+  background: url(../images/gallery-sixth-image.jpg);
+}
+
+.gallery__card-scale:hover {
+  transform: scale(1.04);
+}
